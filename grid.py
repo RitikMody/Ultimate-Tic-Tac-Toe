@@ -2,6 +2,7 @@ import pygame
 
 class Grid:
     def __init__(self):
+        self.previous=[-1,-1]
         self.count=0
         self.gameover=''
         self.grid_lines=[((0,200),(600,200))
@@ -96,7 +97,7 @@ class Grid:
             else :
                 x3=1
                 y3=1
-        if self.matrix[y1][x1][x3][y3]==0:
+        if (self.matrix[y1][x1][x3][y3]==0 and self.previous[0]==-1 and self.previous[1]==-1) or (self.matrix[y1][x1][x3][y3]==0 and self.previous[0]==x1 and self.previous[1]==y1):
             if self.count%2==0:
                 self.matrix[y1][x1][x3][y3]='O' 
                 d=self.pic(x1,y1,y3,x3,'O')
@@ -105,6 +106,8 @@ class Grid:
                 self.matrix[y1][x1][x3][y3]='X'
                 d=self.pic(x1,y1,y3,x3,'X')
                 self.win(y1,x1,'X',screen)
+            self.previous[0]=y3
+            self.previous[1]=x3
             return d
         else:
             self.count=self.count-1

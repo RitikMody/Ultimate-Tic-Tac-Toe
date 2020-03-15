@@ -14,7 +14,7 @@ x=pygame.image.load("C:\\Users\\Home\\Desktop\\Python\\Game1\\x-png-35397.png")
 o=pygame.image.load("C:\\Users\\Home\\Desktop\\Python\\Game1\\circle-png-25312.png")
 
 running=True
-
+pos=[-1,-1]
 while running:
     for event in pygame.event.get():
         if event.type==pygame.QUIT:
