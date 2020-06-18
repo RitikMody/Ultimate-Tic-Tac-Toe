@@ -1,4 +1,7 @@
-<h1>Ultimate-Tic-Tac-Toe</h1>
+##Ultimate-Tic-Tac-Toe
+
+[![](https://img.shields.io/badge/Made_with-python-green?style=for-the-badge&logo=python)](https://flask.palletsprojects.com/en/1.1.x/)
+[![](https://img.shields.io/badge/IDE-Visual_Studio_Code-blue?style=for-the-badge&logo=visual-studio-code)](https://code.visualstudio.com/  "Visual Studio Code")
 A stategic boardgame for 2 players.<br>
 <br>
 <b>Rules:</b><br>
